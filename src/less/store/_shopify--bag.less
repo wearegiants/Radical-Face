@@ -1,0 +1,28 @@
+#bag {
+
+	position: relative;
+
+	&--wrapper {
+
+		background: @white;
+		box-shadow: 0 0 15px @black25;
+		position: absolute;
+		right: 0;
+		z-index: 99;
+
+		@media @min {
+			width: 300px;
+		}
+		@media @tablet {
+			width: 400px;	
+		}
+		
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+}
