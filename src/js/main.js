@@ -8,6 +8,10 @@ function mobileMenu(){
 	$(".mobile-toggle").swap();
 }
 
+function fluidVideos(){
+	$(".fluid-video").fitVids();
+}
+
 function openPoints(){
 	$('.ajax-point').magnificPopup({
 		type: 'ajax',
@@ -15,6 +19,9 @@ function openPoints(){
 			parseAjax: function(mfpResponse) {
 				mfpResponse.data = $(mfpResponse.data).find('#content');
 			},
+			ajaxContentAdded: function() {
+				fluidVideos();
+			}
 		}
 	});
 }
@@ -22,4 +29,5 @@ function openPoints(){
 $(document).ready(function(){
 	mobileMenu();
 	openPoints();
+	fluidVideos();
 });

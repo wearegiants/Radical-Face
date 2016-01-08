@@ -3,10 +3,17 @@
 
 <div id="content">
   <div class="fs-row">
-    <div class="fs-cell fs-all-half fs-centered">
-      <div class="wrapper bg--color_white">
-        <h3 class="color-white"><?php the_title(); ?></h3>
-        <?php the_content(); ?>
+    <div class="fs-cell fs-xl-7 fs-lg-8 fs-md-5 fs-sm-3 fs-centered">
+      <div id="content-box">
+        <div class="wrapper wrapper-main bg--color_brown">
+          <h3 class="color-white"><?php the_title(); ?></h3>
+          <?php the_content(); ?>
+        </div>
+
+        <?php if(get_field('videoaudio_embed')): ?>
+        <div class="fluid-video"><?php the_field('videoaudio_embed'); ?></div>
+        <?php endif; ?>
+        
         <?php include locate_template('parts/relationship.php' );?>
       </div>
     </div>
