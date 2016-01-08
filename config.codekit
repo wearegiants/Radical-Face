@@ -42,13 +42,13 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/img\/website.jpg": {
+	"\/assets\/img\/modal-bg-top.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 43312,
-		"inputAbbreviatedPath": "\/assets\/img\/website.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/website.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/modal-bg-top.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/modal-bg-top.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

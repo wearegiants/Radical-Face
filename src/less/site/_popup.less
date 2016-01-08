@@ -8,7 +8,13 @@
     
     .wrapper {
 
-      padding: @spaced*1.5;
+      @media @min {
+        padding: @spaced;
+      }
+
+      @media @tablet {
+        padding: @spaced*1.75;  
+      }
 
       &-main {
 

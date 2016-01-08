@@ -8,12 +8,15 @@
         <div class="wrapper wrapper-main bg--color_brown">
           <h3 class="color-white"><?php the_title(); ?></h3>
           <?php the_content(); ?>
+
+          <?php if(get_field('videoaudio_embed')): ?>
+          <hr class="invisible compact">
+          <div class="fluid-video"><?php the_field('videoaudio_embed'); ?></div>
+          <?php endif; ?>
+        
+
         </div>
 
-        <?php if(get_field('videoaudio_embed')): ?>
-        <div class="fluid-video"><?php the_field('videoaudio_embed'); ?></div>
-        <?php endif; ?>
-        
         <?php include locate_template('parts/relationship.php' );?>
       </div>
     </div>
