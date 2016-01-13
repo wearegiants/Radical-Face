@@ -5085,6 +5085,60 @@ input[type=button] {
           transform: translate(-50%, -50%);
   width: 100%;
 }
+.map-list {
+  position: relative;
+  z-index: 19;
+}
+.map-banner {
+  position: fixed;
+  width: 100%;
+  height: 212px;
+  background: url('/assets/img/family-tree.png') bottom center no-repeat;
+  z-index: 9;
+  bottom: 0;
+}
+@media screen and (min-width: 300px) {
+  .map-banner {
+    background-size: contain;
+    width: 190%;
+    margin-left: -45%;
+  }
+}
+@media screen and (min-width: 740px) {
+  .map-banner {
+    width: 100%;
+    margin: 0;
+  }
+}
+.map-bg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: url('/assets/img/map.jpg') top center no-repeat;
+}
+@media screen and (min-width: 300px) {
+  .map-bg {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 500px) {
+  .map-bg {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 740px) {
+  .map-bg {
+    background-size: cover;
+    height: 1164px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .map-bg {
+    background-size: cover;
+  }
+}
 .mfp-container #content-box {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
 }

@@ -1,0 +1,53 @@
+.map {
+
+  &-list {
+    position: relative;
+    z-index: 19;
+  }
+
+  &-banner {
+    position: fixed;
+    width: 100%;
+    height: 212px;
+    background: url('/assets/img/family-tree.png') bottom center no-repeat;
+    z-index: 9;
+    bottom: 0;
+
+    @media @min {
+      background-size: contain;
+      width: 190%;
+      margin-left: -45%;
+    }
+
+    @media @tablet {
+      width: 100%;
+      margin: 0;
+    }
+
+  }
+
+  &-bg {
+
+    .cover();
+    background: url('/assets/img/map.jpg') top center no-repeat;
+
+    @media @min {
+      background-size: cover;
+    }
+
+    @media @mobile {
+      background-size: cover;
+    }
+
+    @media @tablet {
+      background-size: cover;
+      height: 1164px;
+    }
+
+    @media @max {
+      background-size: cover;
+    }
+
+  }
+
+}
