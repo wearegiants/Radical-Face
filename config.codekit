@@ -53,6 +53,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/gradient.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10874,
+		"inputAbbreviatedPath": "\/assets\/img\/gradient.png",
+		"outputAbbreviatedPath": "\/assets\/img\/gradient.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/map.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

@@ -5085,11 +5085,80 @@ input[type=button] {
           transform: translate(-50%, -50%);
   width: 100%;
 }
-.map-list {
-  position: relative;
-  z-index: 19;
+body,
+html {
+  height: 100%;
 }
-.map-banner {
+body #wrapper,
+html #wrapper,
+body #content-wrapper,
+html #content-wrapper {
+  height: 100%;
+}
+.map-list {
+  z-index: 999;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+@media screen and (min-width: 500px) {
+  .map-list {
+    width: 520px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .map-list {
+    width: 740px;
+  }
+}
+.map-list_wrapper {
+  height: 100%;
+}
+.map-list_wrap {
+  height: 100%;
+  position: relative;
+  z-index: 99;
+}
+.map-list_item {
+  position: absolute;
+}
+.map-list_item__point {
+  padding-left: 25px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-weight: 200;
+}
+.map-list_item__point span {
+  opacity: 0;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  background: #333;
+  padding: 3px 6px;
+  color: #fff;
+  border-radius: 1px;
+  display: block;
+  -webkit-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+          transform: rotate(3deg);
+  -webkit-transform-origin: left 0px 0px;
+      -ms-transform-origin: left 0px 0px;
+          transform-origin: left 0px 0px;
+}
+.map-list_item:hover span {
+  opacity: 1;
+  -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+.map-list_item.post-9 {
+  top: 220px;
+  left: 20px;
+}
+.map-banner,
+.map-banner_gradient {
   position: fixed;
   width: 100%;
   height: 212px;
@@ -5098,17 +5167,27 @@ input[type=button] {
   bottom: 0;
 }
 @media screen and (min-width: 300px) {
-  .map-banner {
+  .map-banner,
+  .map-banner_gradient {
     background-size: contain;
     width: 190%;
     margin-left: -45%;
   }
 }
 @media screen and (min-width: 740px) {
-  .map-banner {
+  .map-banner,
+  .map-banner_gradient {
     width: 100%;
     margin: 0;
   }
+}
+.map-banner_gradient,
+.map-banner_gradient_gradient {
+  height: 500px;
+  pointer-events: none;
+  background: url('/assets/img/gradient.png') bottom center no-repeat;
+  background-size: 100% 100%;
+  z-index: 8;
 }
 .map-bg {
   height: 100%;
@@ -5171,16 +5250,16 @@ input[type=button] {
   margin-bottom: 10px;
 }
 .gps_ring {
-  border: 3px solid #999;
   -webkit-border-radius: 30px;
   height: 18px;
   width: 18px;
-  top: 0;
-  left: -60px;
+  top: 4px;
+  left: 0;
+  background: #333;
   position: absolute;
   -webkit-animation: pulsate 1s ease-out;
   -webkit-animation-iteration-count: infinite;
-  opacity: 0;
+  opacity: 0.0;
 }
 @-webkit-keyframes pulsate {
   0% {

@@ -1,11 +1,88 @@
+body,html {
+  height: 100%;
+  #wrapper, #content-wrapper {
+    height: 100%;
+  }
+}
+
 .map {
 
   &-list {
+
+    z-index: 999;
+    height: 100%;
+    margin: auto;
     position: relative;
-    z-index: 19;
+
+    @media @mobile {
+      width: 520px;
+    }
+
+    @media @tablet {
+      width: 740px;
+    }
+
+    &_wrapper {
+      height: 100%;
+    }
+
+    &_wrap {
+      height: 100%;
+      position: relative;
+      z-index: 99;
+    }
+
+    &_item {
+      position: absolute;
+
+      &__point {
+        padding-left: 25px;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        .headerFont();
+        font-weight: 200;
+
+        span {
+          opacity: 0;
+          transition: 300ms ease;
+          background: @black;
+          padding: 3px 6px;
+          color: @white;
+          border-radius: 1px;
+          display: block;
+          transform: rotate(3deg);
+          transform-origin: left 0px 0px;
+        }
+
+        &:hover {
+          span {
+            //opacity: 1;
+          }
+        }
+      }
+
+      &:hover {
+        span {
+          opacity: 1;
+          transform: rotate(-2deg);
+        }
+      }
+
+      &.post {
+        
+        &-9 {
+          top: 220px;
+          left: 20px;
+        }
+
+      }
+
+    }
+
   }
 
-  &-banner {
+  &-banner, &-banner_gradient {
     position: fixed;
     width: 100%;
     height: 212px;
@@ -22,6 +99,14 @@
     @media @tablet {
       width: 100%;
       margin: 0;
+    }
+
+    &_gradient {
+      height: 500px;
+      pointer-events: none;
+      background: url('/assets/img/gradient.png') bottom center no-repeat;
+      background-size: 100% 100%;
+      z-index: 8
     }
 
   }
