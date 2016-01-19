@@ -19,7 +19,7 @@
 <div class='map-list'>
   <div class="map-list_wrapper">
   <?php while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
-  <div <?php post_class('map-list_item'); ?>>
+  <div <?php post_class('map-list_item'); ?> style="left:<?php the_field('x_position'); ?>%; top: <?php the_field('y_position'); ?>%">
     <a href="<?php the_permalink(); ?>" class="map-list_item__point ajax-point">
       <span><?php the_title(); ?></span>
     </a>

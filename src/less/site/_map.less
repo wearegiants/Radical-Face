@@ -5,6 +5,11 @@ body,html {
   }
 }
 
+.path {
+  position: absolute;
+  z-index: 9999;
+}
+
 .map {
 
   &-list {
@@ -13,6 +18,7 @@ body,html {
     height: 100%;
     margin: auto;
     position: relative;
+    background: fade(@black, 10%);
 
     @media @mobile {
       width: 520px;
@@ -67,15 +73,6 @@ body,html {
           opacity: 1;
           transform: rotate(-2deg);
         }
-      }
-
-      &.post {
-        
-        &-9 {
-          top: 220px;
-          left: 20px;
-        }
-
       }
 
     }
