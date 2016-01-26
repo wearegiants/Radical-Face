@@ -4,6 +4,20 @@
   position: relative;
   z-index: 99;
 
+  .btn--outline {
+    background: transparent;
+    color: @black;
+    .theHand();
+    .font_size(28);
+    font-weight: 700;
+    &:after {
+      position: relative;
+      top: -.225em;
+      margin-left: 5px;
+      .font_size(15);
+    }
+  }
+
   &--logo {
     margin: 0;
     font-weight: 700;

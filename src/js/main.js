@@ -15,6 +15,9 @@ function fluidVideos(){
 function openPoints(){
 	$('.ajax-point').magnificPopup({
 		type: 'ajax',
+		mainClass: 'mfp-with-fade',
+		removalDelay: 500,
+		showCloseBtn: false,
 		callbacks: {
 			parseAjax: function(mfpResponse) {
 				mfpResponse.data = $(mfpResponse.data).find('#content');

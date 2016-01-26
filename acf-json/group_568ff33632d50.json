@@ -1,0 +1,40 @@
+{
+    "key": "group_568ff33632d50",
+    "title": "Additional Content",
+    "fields": [
+        {
+            "key": "field_568ff33da14a2",
+            "label": "Video\/Audio Embed",
+            "name": "videoaudio_embed",
+            "type": "oembed",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_parent",
+                "operator": "==",
+                "value": "5"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1453764863
+}

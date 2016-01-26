@@ -11,6 +11,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/acf-json\/group_568ff33632d50.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf-json\/group_568ff33632d50.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf-json\/group_568ff33632d50-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/acf-json\/group_56a6b105c1631.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf-json\/group_56a6b105c1631.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf-json\/group_56a6b105c1631-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/acf-json\/group_56a6ba2969eb4.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf-json\/group_56a6ba2969eb4.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf-json\/group_56a6ba2969eb4-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/assets\/css\/main.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -19,6 +52,22 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/fonts\/lagoupil-thehandextrablack.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/fonts\/lagoupil-thehandextrablack.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/lagoupil-thehandextrablack.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/assets\/fonts\/ss-gizmo.js": {
 		"fileType": 64,
@@ -41,6 +90,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/img\/1453789458_location.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2229,
+		"inputAbbreviatedPath": "\/assets\/img\/1453789458_location.png",
+		"outputAbbreviatedPath": "\/assets\/img\/1453789458_location.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/assets\/img\/family-tree.png": {
 		"fileType": 32768,
@@ -15775,7 +15835,7 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"strictImports": 0,
 		"strictMath": 0,
@@ -15831,6 +15891,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/less\/site\/_pulsation.less",
 		"outputAbbreviatedPath": "\/src\/less\/css\/_pulsation.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/src\/less\/site\/_thehand.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/less\/site\/_thehand.less",
+		"outputAbbreviatedPath": "\/src\/less\/css\/_thehand.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

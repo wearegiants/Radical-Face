@@ -21,9 +21,21 @@
   <?php while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
   <div <?php post_class('map-list_item'); ?> style="left:<?php the_field('x_position'); ?>%; top: <?php the_field('y_position'); ?>%">
     <a href="<?php the_permalink(); ?>" class="map-list_item__point ajax-point">
-      <span><?php the_title(); ?></span>
+      <span class="title">
+        <span class="title-main"><?php the_title(); ?></span>
+        
+        <?php if(get_field('subtitle')): ?>
+        <span class="title-sub"><?php the_field('subtitle'); ?></span>
+        <?php else: ?>
+        <span class="title-sub">Subtitle goes hurr</span>
+        <?php endif; ?>
+
+      </span>
     </a>
-    <div class="gps_ring"></div>
+    <div class="gps_ring_wrapper">
+      <div class="gps_ring_pin"><img src="/assets/img/1453789452_location.svg" class="img-responsive"/></div>
+      <div class="gps_ring"></div>
+    </div>
   </div>
   <?php 
     endwhile;
@@ -34,7 +46,7 @@
 </div>
 </div>
 
-<div class="map-banner"></div>
+<div class="map-banner floating"></div>
 <div class="map-banner_gradient"></div>
 <div class="map-bg"></div>
 

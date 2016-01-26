@@ -1,18 +1,29 @@
 .gps_ring {
     //border: 3px solid @black;
     -webkit-border-radius: 30px;
-    height: 18px;
-    width: 18px;
-    top: 4px;
+    height: 20px;
+    width: 20px;
+    top: 24px;
     left: 0;
-    background: @black;
+    background: @black50;
     position: absolute;
     -webkit-animation: pulsate 1s ease-out;
     -webkit-animation-iteration-count: infinite; 
     opacity: 0.0;
+
+    &_wrapper {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+    }
+    &_pin {
+        position: absolute;
+        top: 12px;
+    }
 }
 @-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    0% {-webkit-transform: scale(0.1, 0.1) rotateX(65deg); opacity: 0.0;}
     50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+    100% {-webkit-transform: scale(1.2, 1.2) rotateX(65deg); opacity: 0.0;}
 }
