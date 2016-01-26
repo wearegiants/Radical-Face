@@ -33,7 +33,14 @@
       </span>
     </a>
     <div class="gps_ring_wrapper">
+      <?php
+        $page = $post->post_name; 
+        if ($page == 'always-gold'): 
+      ?>
+      <div class="gps_ring_pin"><img src="/assets/img/1453789452_location_whte.svg" class="img-responsive"/></div>
+      <?php else: ?>
       <div class="gps_ring_pin"><img src="/assets/img/1453789452_location.svg" class="img-responsive"/></div>
+      <?php endif; ?>  
       <div class="gps_ring"></div>
     </div>
   </div>
