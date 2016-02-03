@@ -10,10 +10,11 @@
 
   <!-- Main Info -->
   <div class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-contained relative">
-  <div class="fluid-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/-si--r51ZQY" frameborder="0" allowfullscreen></iframe></div>
+  <div class="fluid-video"><?php the_field('videoaudio_embed'); ?></div>
   <div class="wrapper wrapper_extra bg--color_white">
     <h1 id="poi-title"><?php the_title(); ?></h1>
     <?php the_content(); ?>
+    <?php include locate_template('parts/relationship.php' );?>
   </div>
   </div>
 
@@ -35,27 +36,6 @@
 
 </div>
 </div>
-</div>
-
-<div id="content">
-  <div class="fs-row point-screen_content">
-    <div class="fs-cell fs-xl-6 fs-lg-6 fs-md-5 fs-sm-3 fs-centered">
-      <div id="content-box">
-        <a href="#" class="close-modal ss-gizmo ss-delete"></a>
-        <div class="wrapper wrapper-main bg--color_brown wrapper-shadow">
-          <h1 class="color-white"><?php the_title(); ?></h1>
-          <?php the_content(); ?>
-
-          <?php if(get_field('videoaudio_embed')): ?>
-          <hr class="invisible compact">
-          <div class="fluid-video"><?php the_field('videoaudio_embed'); ?></div>
-          <?php endif; ?>
-
-        </div>
-        <?php include locate_template('parts/relationship.php' );?>
-      </div>
-    </div>
-  </div>
 </div>
 
 <?php endwhile; endif; ?>

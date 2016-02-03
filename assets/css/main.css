@@ -5201,7 +5201,9 @@ input[type=button] {
 }
 #header {
   padding: 25px 0;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 99;
 }
 #header--logo {
