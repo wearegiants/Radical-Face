@@ -20,11 +20,31 @@
 <script src="/assets/js/app.ie.min.js"></script>
 <![endif]-->
 
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+<![endif]-->
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
 <?php include_once locate_template('lib/config.fonts.php' ); ?>
 <?php include_once locate_template('lib/config.menus.php' ); ?>
 
 </head>
 
-<body class="fs-grid">
-<div id="wrapper">
+<body class="fs-grid" onload="init()">
+
+<div id="header" class="pinned-top">
+  <div class="fs-grid fs-grid-fluid">
+    <div class="fs-row">
+      <div class="fs-cell fs-all-half">
+        <a href="#" class="btn btn--outline">info</a>
+      </div>
+      <div class="fs-cell fs-all-half text-right">
+        <a href="#" class="btn btn--outline ss-gizmo ss-right right">back to radicalface.com</a>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<div id="wrapper" class="fs-grid">
 <div id="content-wrapper" class='fs-grid'>

@@ -59,6 +59,31 @@ input[type=button] {
     }
   }
 
+  &--featured {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    
+    span {
+      .font_size(32);
+      position: relative;
+      top: .125em;
+      letter-spacing: 1px;  
+      font-weight: 100;
+      .theHand();
+      text-transform: uppercase;  
+    }
+    
+    &:after {
+      position: absolute;
+      right: 10px;
+      top: .225em;
+    }
+  }
+
   &--logo {
     background: transparent;
     font-weight: 400;

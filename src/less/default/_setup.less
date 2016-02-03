@@ -112,12 +112,20 @@ img.rounded {
 }
 
 .centered {
-  float: none!important;
-  margin: auto!important;
+  .center();
+  &-full {
+    width: 100%;
+  }
 }
 
 .wrapper {
   padding: @spaced/1.5;
+  &_extra {
+    padding: @spaced*1.5;
+  }
+  &_shadow {
+    box-shadow: 0 @spaced/2 @spaced @black25;
+  }
 }
 
 .covered{
@@ -135,6 +143,9 @@ img.rounded {
   }
   &_gray {
     background: @gray
+  }
+  &_overlay {
+    background: @black50;
   }
 }
 
@@ -198,3 +209,30 @@ img.rounded {
   }
 }
 
+.relative {
+  position: relative;
+}
+
+.pinned {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  &_top {
+    top: 0;
+  }
+  &_bottom {
+    bottom: 0;
+  }
+}
+
+.close-modal {
+  text-decoration: none;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  &:before {
+    position: relative;
+    top: .125em;
+  }
+}

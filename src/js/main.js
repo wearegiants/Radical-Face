@@ -1,13 +1,62 @@
 // @codekit-prepend "site/default-ui.js"
 
-function mobileMenu(){
-	// Clone that thing
-	var a = $('#header-navigation').html();
-	var b = $('#mobile-menu_container').html(a);
-	$('#mobile-menu_container a').removeClass('btn-nav').addClass('btn-mobile');
-	$(".mobile-toggle").swap();
+magnificPopup = $.magnificPopup.instance;
+
+function setCookie() {
+	$.cookie('radicalface', '');
+}
+
+function fluidVideos(){
+	$(".fluid-video").fitVids({
+		customSelector: "iframe[src^='https://embed.spotify.com']"
+	});
+}
+
+function openonLoad(){
+	$(window).load(function(){
+		if ( $.cookie('radicalface')) { 
+			console.log('Cookies!')
+		} else {
+			$.magnificPopup.open({
+				items: {
+					src: '#welcome',
+	      			type: 'inline'
+				},
+				mainClass: 'mfp-with-fade',
+				removalDelay: 500,
+			}, 0);
+			setCookie();
+		}
+	});
+}
+
+function closeModal(){
+	$('.close-modal').on('click',function(){
+		magnificPopup.close();
+	});
+}
+
+function openPoints(){
+	$('.ajax-point').magnificPopup({
+		type: 'ajax',
+		mainClass: 'mfp-with-fade',
+		removalDelay: 500,
+		showCloseBtn: false,
+		callbacks: {
+			parseAjax: function(mfpResponse) {
+				mfpResponse.data = $(mfpResponse.data).find('#poi');
+			},
+			ajaxContentAdded: function() {
+				fluidVideos();
+				closeModal();
+			}
+		}
+	});
 }
 
 $(document).ready(function(){
-	mobileMenu();
+	openPoints();
+	fluidVideos();
+	//openonLoad();
+	closeModal();
 });

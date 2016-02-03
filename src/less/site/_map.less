@@ -1,0 +1,227 @@
+body,html {
+  height: 100%;
+  #wrapper, #content-wrapper {
+    height: 100%;
+  }
+}
+
+.path {
+  position: absolute;
+  z-index: 9999;
+}
+
+.map {
+
+  &-list {
+
+    z-index: 999;
+    height: 100%;
+    margin: auto;
+    position: relative;
+
+    @media @mobile {
+      width: 520px;
+    }
+
+    @media @tablet {
+      width: 740px;
+    }
+
+    &_wrapper {
+      height: 100%;
+    }
+
+    &_wrap {
+      height: 100%;
+      position: relative;
+      z-index: 99;
+    }
+
+    &_item {
+      position: absolute;
+
+      &__point {
+        padding-left: 25px;
+        display: block;
+        text-decoration: none;
+        .headerFont();
+        font-weight: 200;
+
+        .title {
+          opacity: 0;
+          transition: 300ms ease;
+          background: @white;
+          padding: 0 20px;
+          height: 45px;
+          color: @black;
+          border-radius: 1px;
+          display: block;
+          transform: rotate(3deg);
+          transform-origin: left 0px 0px;
+          z-index: 2;
+
+          &-main {
+            .font_size(24);
+            .theHand();
+            margin-top: 2px;
+            text-transform: uppercase;
+          }
+
+          &-sub {
+            display: block;
+            font-family: 'georgia';
+            font-size: 12px;
+            margin-top: -12px;
+          }
+        }
+
+        &:after {
+          content:'';
+          .cover();
+          opacity: 0;
+          margin-top: 3px;
+          z-index: -1;
+          left: 27px;
+          right: 0;
+          width: auto;
+          display: block;
+          background: fade(@black, 20%);
+          transform: rotate(3deg);
+        }
+
+        &:hover {
+          span {
+            //opacity: 1;
+          }
+        }
+      }
+
+      &:hover {
+        .title {
+          opacity: 1;
+          transform: rotate(-2deg);
+        }
+        :after {
+          opacity: 1
+        }
+      }
+
+    }
+
+  }
+
+  &-banner, &-banner_gradient {
+    position: fixed;
+    width: 100%;
+    height: 212px;
+    background: url('/assets/img/family-tree.png') bottom center no-repeat;
+    z-index: 9;
+    bottom: 0;
+
+    @media @min {
+      background-size: contain;
+      width: 190%;
+      margin-left: -45%;
+    }
+
+    @media @tablet {
+      width: 100%;
+      margin: 0;
+    }
+
+    &_gradient {
+      height: 500px;
+      pointer-events: none;
+      background: url('/assets/img/gradient.png') bottom center no-repeat;
+      background-size: 100% 100%;
+      z-index: 8
+    }
+
+  }
+
+  &-bg {
+
+    .cover();
+    background: url('/assets/img/map.jpg') top center no-repeat;
+
+    @media @min {
+      background-size: cover;
+    }
+
+    @media @mobile {
+      background-size: cover;
+    }
+
+    @media @tablet {
+      background-size: cover;
+      height: 1164px;
+    }
+
+    @media @max {
+      background-size: cover;
+    }
+
+  }
+
+}
+
+.point-screen {
+  .cover();
+  position: fixed;
+  pointer-events: none;
+  &_points {
+    .cover();
+    z-index: 4;
+  }
+  &_map {
+    .cover();
+    z-index: 3;
+    background-size: cover;
+    background-position: left center;
+    transition: 50000ms;
+  }
+  &_content {
+    position: relative;
+    z-index: 5;
+  }
+}
+
+.mfp-ready {
+  .point-screen_map {
+    transform: scale(1.2,1.2);
+  }
+}
+
+
+.floating{
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-duration: 7s; 
+  -webkit-animation-duration: 7s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);  
+  }
+  50% {
+    transform: translateY(3%);  
+  } 
+  100% {
+    transform: translateY(0%);
+  }     
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);  
+  }
+  50% {
+    -webkit-transform: translateY(3%);  
+  } 
+  100% {
+    -webkit-transform: translateY(0%);
+  }     
+}
