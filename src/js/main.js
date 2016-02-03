@@ -3,7 +3,7 @@
 magnificPopup = $.magnificPopup.instance;
 
 function setCookie() {
-	$.cookie('radicalface', '');
+	$.cookie('radicalface', 'boom');
 }
 
 function fluidVideos(){
@@ -20,7 +20,7 @@ function openonLoad(){
 			$.magnificPopup.open({
 				items: {
 					src: '#welcome',
-	      			type: 'inline'
+	      	type: 'inline'
 				},
 				mainClass: 'mfp-with-fade',
 				removalDelay: 500,
