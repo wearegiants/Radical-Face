@@ -57,6 +57,6 @@ function openPoints(){
 $(document).ready(function(){
 	openPoints();
 	fluidVideos();
-	//openonLoad();
+	openonLoad();
 	closeModal();
 });
