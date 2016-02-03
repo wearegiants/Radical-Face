@@ -80,12 +80,17 @@
       });
 
       var poiURL   = planes[i][3];
-      console.log(poiURL);
+      //console.log(poiURL);
 
-      function openShit(){
-        $.magnificPopup.open({
+      marker = new L.marker([planes[i][1],planes[i][2]], {icon: icon, alt:poiURL})
+        //.bindPopup(planes[i][0])
+        .addTo(map)
+        .on('click', function(e) {
+          var url = e.target.options.alt;
+          console.log(url);
+          $.magnificPopup.open({
             items: {
-              src: poiURL
+              src: url
             },
             callbacks: {
               parseAjax: function(mfpResponse) {
@@ -99,15 +104,6 @@
             type: 'ajax',
             mainClass: 'mfp-with-fade',
           });
-      }
-
-
-      marker = new L.marker([planes[i][1],planes[i][2]], {icon: icon})
-        //.bindPopup(planes[i][0])
-        .addTo(map)
-        .on('click', function(e) {
-          //console.log(url);
-          openShit();
         });
     }
     
