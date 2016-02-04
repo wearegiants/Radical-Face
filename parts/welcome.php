@@ -1,5 +1,4 @@
-<div id="welcome" class="covered bg--color_overlay mfp-hide">
-<div class="centered centered-full">
+<div id="welcome" class="mfp-hide">
 <div class="fs-row">
 <div class="fs-cell fs-lg-7 fs-md-6 fs-sm-3 fs-centered relative">
 <div class="wrapper" id="welcome-top"></div>
@@ -10,7 +9,6 @@
 
 </div>
 <div class="wrapper" id="welcome-bottom"></div>
-</div>
 </div>
 </div>
 </div>

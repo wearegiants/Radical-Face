@@ -26,6 +26,6 @@
 </head>
 
 <body class="fs-grid">
-<div id="wrapper" class="bg--color_black">
+<div id="wrapper" class="bg--color_overlay">
 <div id="content-wrapper" class='fs-grid'>
 <br><br><br>

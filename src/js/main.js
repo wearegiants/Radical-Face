@@ -36,6 +36,14 @@ function closeModal(){
 	});
 }
 
+function openLink(){
+	$(".poi_content a").on('click', function(e){
+		e.preventDefault();
+		alert('boom');
+		magnificPopup.close();
+	});
+}
+
 function openPoints(){
 	$('.ajax-point').magnificPopup({
 		type: 'ajax',
@@ -65,4 +73,5 @@ $(document).ready(function(){
 	fluidVideos();
 	openonLoad();
 	closeModal();
+	openLink();
 });

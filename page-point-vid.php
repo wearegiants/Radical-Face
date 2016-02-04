@@ -11,7 +11,7 @@
   <!-- Main Info -->
   <div class="fs-cell fs-lg-9 fs-md-6 fs-sm-3 fs-contained relative">
   <div class="fluid-video"><?php the_field('videoaudio_embed'); ?></div>
-  <div class="wrapper wrapper_extra bg--color_black">
+  <div class="wrapper poi_content wrapper_extra bg--color_black">
     <h1 id="poi-title"><?php the_title(); ?></h1>
     <?php the_content(); ?>
     <?php // include locate_template('parts/relationship.php' );?>
