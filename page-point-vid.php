@@ -9,7 +9,7 @@
   <div id="poi-background" class="fs-cell fs-contained bg--color_black wrapper_shadow">
 
   <!-- Main Info -->
-  <div class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-contained relative">
+  <div class="fs-cell fs-lg-9 fs-md-6 fs-sm-3 fs-contained relative">
   <div class="fluid-video"><?php the_field('videoaudio_embed'); ?></div>
   <div class="wrapper wrapper_extra bg--color_black">
     <h1 id="poi-title"><?php the_title(); ?></h1>
@@ -19,7 +19,7 @@
   </div>
 
   <!-- Main Info -->
-  <div class="fs-cell fs-lg-4 fs-md-6 fs-sm-3 fs-contained relative">
+  <div class="fs-cell fs-lg-3 fs-md-6 fs-sm-3 fs-contained relative">
     <div class="wrapper">
       <a href="#" class="close-modal ss-gizmo ss-delete"></a>
       <h3 class="color--white">Listen on Spotify</h3>
@@ -31,11 +31,13 @@
       <!-- Other Buttons -->
       <span href="#" class="wrapper_shadow btn btn--featured">
         <span>Listen Now</span>
-        <?php if (get_field('apple_music')): ?><a href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-appleinc"></a><?php endif; ?>
-        <?php if (get_field('sound_cloud')): ?><a href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-soundcloud"></a><?php endif; ?>
-        <?php if (get_field('youtube')): ?><a href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-youtube"></a><?php endif; ?>
+        <?php if (get_field('apple_music')): ?><a target="_blank" href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-appleinc"></a><?php endif; ?>
+        <?php if (get_field('sound_cloud')): ?><a target="_blank" href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-soundcloud"></a><?php endif; ?>
+        <?php if (get_field('youtube')): ?>    <a target="_blank" href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-youtube"></a><?php endif; ?>
       </span>
-      <a href="<?php the_field('buy_link'); ?>" class="wrapper_shadow btn btn--featured ss-gizmo ss-navigateright right"><span>Buy: <?php the_title(); ?></span></a>
+
+      <a target="_blank" href="<?php the_field('buy_link'); ?>" class="wrapper_shadow btn btn--featured ss-gizmo ss-navigateright right"><span>Buy: <?php the_title(); ?></span></a>
+      <a target="_blank" href="https://muut.com/radicalfaceforum" class="wrapper_shadow btn btn--featured ss-gizmo ss-navigateright right"><span>Join the discussion!</span></a>
     </div>
   </div>
 

@@ -32,12 +32,14 @@
                 <div class="fs-cell fs-lg-8 fs-md-3 fs-sm-3">
                   <h3 class="color--white">&nbsp;</h3>
                   <span href="#" class="wrapper_shadow btn btn--featured">
-                    <span>Listen Now</span>
-                    <?php if (get_field('apple_music')): ?><a href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-appleinc"></a><?php endif; ?>
-                    <?php if (get_field('sound_cloud')): ?><a href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-soundcloud"></a><?php endif; ?>
-                    <?php if (get_field('youtube')): ?><a href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-youtube"></a><?php endif; ?>
+                  <span>Listen Now</span>
+                    <?php if (get_field('apple_music')): ?><a target="_blank" href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-appleinc"></a><?php endif; ?>
+                    <?php if (get_field('sound_cloud')): ?><a target="_blank" href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-soundcloud"></a><?php endif; ?>
+                    <?php if (get_field('youtube')): ?>    <a target="_blank" href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-youtube"></a><?php endif; ?>
                   </span>
-                  <a href="<?php the_field('buy_link'); ?>" class="wrapper_shadow btn btn--featured ss-gizmo ss-navigateright right"><span>Buy: <?php the_title(); ?></span></a>
+                  
+                  <a target="_blank" href="<?php the_field('buy_link'); ?>" class="wrapper_shadow btn btn--featured ss-gizmo ss-navigateright right"><span>Buy: <?php the_title(); ?></span></a>
+                  <a target="_blank" href="https://muut.com/radicalfaceforum" class="wrapper_shadow btn btn--featured ss-gizmo ss-navigateright right"><span>Join the discussion!</span></a>
                 </div>
               </div>
           </div>
