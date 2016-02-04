@@ -52,7 +52,7 @@
       tms: false
     }).addTo(map);
 
-    map.setView([-55,120], mapMinZoom);
+    map.setView([-60,120], mapMinZoom);
 
     var planes = [
 
