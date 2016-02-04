@@ -93,6 +93,7 @@
             items: {
               src: url
             },
+            showCloseBtn: false,
             callbacks: {
               parseAjax: function(mfpResponse) {
                 mfpResponse.data = $(mfpResponse.data).find('#poi');
