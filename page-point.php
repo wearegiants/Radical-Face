@@ -22,12 +22,17 @@
   <div class="fs-cell fs-lg-4 fs-md-6 fs-sm-3 fs-contained relative">
     <div class="wrapper">
       <a href="#" class="close-modal ss-gizmo ss-delete"></a>
+
+      <?php $embeds = get_field('music_embeds'); ?>
+      <?php foreach ($embeds as $row): ?>
+
       <h3 class="color--white">Listen on Spotify</h3>
       <!-- Spotify Embed -->
       <div class="fluid-video wrapper_shadow"><iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aspotifydiscover%3Aplaylist%3A1kcD7btDsER1WKH91zDBt4" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></div>
       <!-- Other Buttons -->
       <a href="#" class="wrapper_shadow btn btn--featured ss-gizmo ss-navigateright right"><span>Listen on Apple Music</span></a>
       <a href="#" class="wrapper_shadow btn btn--featured ss-gizmo ss-navigateright right"><span>Purchase Family Portrait</span></a>
+      <?php endforeach; ?>
     </div>
   </div>
 

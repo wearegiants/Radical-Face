@@ -34,13 +34,13 @@
 <body class="fs-grid" onload="init()">
 
 <div id="header" class="pinned-top">
-  <div class="fs-grid fs-grid-fluid">
+  <div class="fs-grid fs-grid">
     <div class="fs-row">
-      <div class="fs-cell fs-all-half">
-        <a href="#" class="btn btn--outline">info</a>
+      <div class="fs-cell fs-all-half fs-sm-1">
+        <a href="#" class="btn btn--outline"><span>info</span></a>
       </div>
-      <div class="fs-cell fs-all-half text-right">
-        <a href="#" class="btn btn--outline ss-gizmo ss-right right">back to radicalface.com</a>
+      <div class="fs-cell fs-all-half fs-sm-2 text-right">
+        <a href="#" class="btn btn--outline ss-gizmo ss-right right"><span>back to radicalface.com</span></a>
       </div>
     </div>
   </div>  

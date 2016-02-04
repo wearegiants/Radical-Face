@@ -52,7 +52,7 @@
       tms: false
     }).addTo(map);
 
-    map.setView([-70,120], mapMinZoom);
+    map.setView([-55,120], mapMinZoom);
 
     var planes = [
 
@@ -72,9 +72,9 @@
       var icon = L.icon({
           iconUrl: poiIcon,
           //shadowUrl: 'leaf-shadow.png',
-          iconSize:     [64, 64], // size of the icon
+          iconSize:     [90, 90], // size of the icon
           //shadowSize:   [50, 64], // size of the shadow
-          //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+          iconAnchor:   [45, 80], // point of the icon which will correspond to marker's location
           //shadowAnchor: [4, 62],  // the same for the shadow
           //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
       });
@@ -82,9 +82,10 @@
       var poiURL   = planes[i][3];
       //console.log(poiURL);
 
-      marker = new L.marker([planes[i][1],planes[i][2]], {icon: icon, alt:poiURL})
+      marker = new L.marker([planes[i][1],planes[i][2]], {icon: icon, title: planes[i][0], alt:poiURL})
         //.bindPopup(planes[i][0])
         .addTo(map)
+        
         .on('click', function(e) {
           var url = e.target.options.alt;
           console.log(url);
