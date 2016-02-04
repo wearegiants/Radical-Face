@@ -121,7 +121,13 @@ img.rounded {
 .wrapper {
   padding: @spaced/1.5;
   &_extra {
-    padding: @spaced*1.5;
+    @media @min {
+      padding: @spaced/1.5;
+    }
+    @media @tablet {
+      padding: @spaced*1.5;  
+    }
+    
   }
   &_shadow {
     box-shadow: 0 @spaced/2 @spaced @black25;

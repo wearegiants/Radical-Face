@@ -1,12 +1,40 @@
 #poi {
+  color: @white75;
+  p {
+    color: inherit;
+  }
   &-wrapper {
     background: red;
     position: absolute;
     z-index: 999999;
+    color: @white;
     .center();
   }
   &-background {
   	background: url('/assets/img/modal-bg.jpg');
   	background-size: cover;
+  }
+  &-title {
+    .theHand();
+    @media @min {
+      .font_size(32);   
+    }
+    @media @tablet {
+      .font_size(48); 
+    }
+    
+    color: @white;
+    line-height: 1;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  h3 {
+    .theHand();
+    .font_size(32);
+    line-height: 1;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 8px;
   }
 }

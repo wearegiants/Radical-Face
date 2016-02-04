@@ -26,21 +26,6 @@
 </head>
 
 <body class="fs-grid">
-<div id="wrapper">
-
-<header id="header">
-  <div class="fs-row">
-    <menu id="header-main" class="fs-cell fs-lg-4 fs-md-2 fs-sm-2">
-      <a href="/" id="header--logo" class="btn btn--logo btn--nav btn_first"><?php bloginfo('name' );?></a>
-    </menu>
-    <menu id="header-mobile" class="fs-cell fs-lg-hide fs-md-hide fs-sm-1 text-right">
-      <a data-swap-target="#mobile-menu" class="mobile-toggle btn btn--hamburg right btn--nav btn_first btn_last">Menu</a>
-    </menu>
-    <menu id="header-navigation" class="fs-cell fs-lg-8 fs-md-4 fs-sm-hide text-right">
-      <?php echo strip_tags(wp_nav_menu( $mainMenu ), '<a>' ); ?>
-      <?php // include locate_template('parts/store/shopify--bag.php') ?>
-    </menu>
-  </div>
-</header>
-
+<div id="wrapper" class="bg--color_overlay">
 <div id="content-wrapper" class='fs-grid'>
+<br><br><br>

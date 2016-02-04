@@ -37,7 +37,7 @@
   <div class="fs-grid fs-grid">
     <div class="fs-row">
       <div class="fs-cell fs-all-half fs-sm-1">
-        <a href="#" class="btn btn--outline"><span>info</span></a>
+        <a href="#welcome" class="inline-point btn btn--outline"><span>info</span></a>
       </div>
       <div class="fs-cell fs-all-half fs-sm-2 text-right">
         <a href="#" class="btn btn--outline ss-gizmo ss-right right"><span>back to radicalface.com</span></a>

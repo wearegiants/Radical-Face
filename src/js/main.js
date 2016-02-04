@@ -52,6 +52,12 @@ function openPoints(){
 			}
 		}
 	});
+	$('.inline-point').magnificPopup({
+		type:'inline',
+		mainClass: 'mfp-with-fade',
+		removalDelay: 500,
+		showCloseBtn: false,
+	});
 }
 
 $(document).ready(function(){
