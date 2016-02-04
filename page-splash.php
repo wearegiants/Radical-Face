@@ -9,4 +9,4 @@
 <?php include locate_template('parts/poi.php' ); ?>
 <!-- Map Base -->
 
-<?php get_footer('splash'); ?>
+<?php get_footer(); ?>
