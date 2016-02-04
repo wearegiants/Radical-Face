@@ -45,9 +45,17 @@
         map.unproject([7936, 0], mapMaxZoom));
         
     map.fitBounds(mapBounds);
+
     L.tileLayer('/assets/map/{z}/{x}/{y}.png', {
-      //minZoom: mapMinZoom, maxZoom: mapMaxZoom,
-      //bounds: mapBounds,
+      minZoom: mapMinZoom, maxZoom: mapMaxZoom,
+      bounds: mapBounds,
+      noWrap: true,
+      tms: false
+    }).addTo(map);
+
+    L.tileLayer('/assets/points/{z}/{x}/{y}.png', {
+      minZoom: mapMinZoom, maxZoom: mapMaxZoom,
+      bounds: mapBounds,
       noWrap: true,
       tms: false
     }).addTo(map);
@@ -74,7 +82,7 @@
           //shadowUrl: 'leaf-shadow.png',
           iconSize:     [90, 90], // size of the icon
           //shadowSize:   [50, 64], // size of the shadow
-          iconAnchor:   [45, 80], // point of the icon which will correspond to marker's location
+          iconAnchor:   [45, 90], // point of the icon which will correspond to marker's location
           //shadowAnchor: [4, 62],  // the same for the shadow
           //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
       });
