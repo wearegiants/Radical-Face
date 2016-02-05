@@ -66,7 +66,7 @@
 
     // -70,120 is basically centered
 <?php while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
-      ['<?php the_title(); ?>',<?php the_field("x_position"); ?>,<?php the_field("y_position"); ?>,'<?php the_permalink(); ?>','<?php the_field("icon"); ?>'],
+      ['<?php the_title(); ?>',<?php the_field("x_position"); ?>,<?php the_field("y_position"); ?>,'<?php the_permalink(); ?>','/assets/img/transparent.png'],
 <?php endwhile; $wp_query = null; $wp_query = $temp;?>
     ];
 
@@ -80,9 +80,9 @@
       var icon = L.icon({
           iconUrl: poiIcon,
           //shadowUrl: 'leaf-shadow.png',
-          iconSize:     [90, 90], // size of the icon
+          iconSize:     [32, 32], // size of the icon
           //shadowSize:   [50, 64], // size of the shadow
-          iconAnchor:   [45, 90], // point of the icon which will correspond to marker's location
+          //iconAnchor:   [16, 30], // point of the icon which will correspond to marker's location
           //shadowAnchor: [4, 62],  // the same for the shadow
           //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
       });
@@ -90,7 +90,11 @@
       var poiURL   = planes[i][3];
       //console.log(poiURL);
 
-      marker = new L.marker([planes[i][1],planes[i][2]], {icon: icon, title: planes[i][0], alt:poiURL})
+      marker = new L.marker([planes[i][1],planes[i][2]], {
+          icon: icon, 
+          title: planes[i][0], 
+          alt:poiURL
+        })
         //.bindPopup(planes[i][0])
         .addTo(map)
         
