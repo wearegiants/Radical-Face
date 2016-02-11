@@ -66,7 +66,11 @@
 
     // -70,120 is basically centered
 <?php while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
+      <?php if ( get_post_status ( $ID ) == 'private' ): ?>
+      ['<?php the_title(); ?>',<?php the_field("x_position"); ?>,<?php the_field("y_position"); ?>,'<?php the_permalink(); ?>','/assets/img/crosshairs.png'],
+      <?php else: ?>
       ['<?php the_title(); ?>',<?php the_field("x_position"); ?>,<?php the_field("y_position"); ?>,'<?php the_permalink(); ?>','/assets/img/transparent.png'],
+      <?php endif; ?>
 <?php endwhile; $wp_query = null; $wp_query = $temp;?>
     ];
 
