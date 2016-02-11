@@ -40,7 +40,7 @@
         <a href="#welcome" class="inline-point btn btn--outline"><span>info</span></a>
       </div>
       <div class="fs-cell fs-all-half fs-sm-2 text-right">
-        <a href="http://radicalface.com" class="btn btn--outline ss-gizmo ss-right right"><span>back to radicalface.com</span></a>
+        <a href="http://home.radicalface.com" class="btn btn--outline ss-gizmo ss-right right"><span>back to radicalface.com</span></a>
       </div>
     </div>
   </div>  
