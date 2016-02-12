@@ -31,9 +31,9 @@
       <!-- Other Buttons -->
       <span href="#" class="wrapper_shadow btn btn--featured">
         <span>Listen Now</span>
-        <?php if (get_field('apple_music')): ?><a target="_blank" href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-appleinc"></a><?php endif; ?>
-        <?php if (get_field('sound_cloud')): ?><a target="_blank" href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-soundcloud"></a><?php endif; ?>
-        <?php if (get_field('youtube')): ?>    <a target="_blank" href="<?php the_field('buy_link'); ?>" class="ss-icon ss-social-circle ss-youtube"></a><?php endif; ?>
+        <?php if (get_field('apple_music')): ?><a target="_blank" href="<?php the_field('apple_music'); ?>" class="ss-icon ss-social-circle ss-appleinc"></a><?php endif; ?>
+        <?php if (get_field('sound_cloud')): ?><a target="_blank" href="<?php the_field('sound_cloud'); ?>" class="ss-icon ss-social-circle ss-soundcloud"></a><?php endif; ?>
+        <?php if (get_field('youtube')): ?>    <a target="_blank" href="<?php the_field('youtube'); ?>" class="ss-icon ss-social-circle ss-youtube"></a><?php endif; ?>
       </span>
 
       <a target="_blank" href="<?php the_field('buy_link'); ?>" class="wrapper_shadow btn btn--featured ss-gizmo ss-navigateright right"><span>Buy: <?php the_title(); ?></span></a>
